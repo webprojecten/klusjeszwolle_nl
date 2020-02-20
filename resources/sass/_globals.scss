@@ -1,0 +1,36 @@
+$primair: #3fc9b2;
+$contrast: #c95d3f;
+
+body, html {
+    padding: 0;
+    margin:0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.primair {
+    color: $primair;
+}
+
+.contrast {
+    color: $contrast;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+#logo, nav {
+    a {
+        &:hover {
+            text-decoration: none !important;
+        }
+    }
+}
