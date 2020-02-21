@@ -79,10 +79,10 @@ function closeNav() {
 
 
 // cirkel animation 
-var cta_tekst = document.querySelector('#cta-tekst');
-window.onload = function() {
-    this.setTimeout(function(){this.cta_tekst.classList.add('opaque-from-left')}, 150);
-}
+// var cta_tekst = document.querySelector('#cta-tekst');
+// window.onload = function() {
+//     this.setTimeout(function(){this.cta_tekst.classList.add('opaque-from-left')}, 150);
+// }
 
 // sidenav
 var nav_links = document.querySelector('#nav-links');

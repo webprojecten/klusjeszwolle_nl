@@ -5,15 +5,15 @@
 }
 
 .primair {
-  color: #800020;
+  color: #02827e;
 }
 
 .contrast {
-  color: #208000;
+  color: #822202;
 }
 
 .container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -36,7 +36,6 @@ nav a:hover {
 }
 
 #header {
-  border-bottom: 2px solid #800020;
   height: 70px;
   position: fixed;
   background-color: white;
@@ -53,12 +52,11 @@ nav a:hover {
 #logo {
   font-size: 1.2em;
   margin: 20px 0;
-  color: #505050;
 }
 
 #logo-zwolle {
   color: white;
-  background-color: #800020;
+  background-color: #02827e;
   padding: 10px;
   border-radius: 5px;
 }
@@ -83,11 +81,11 @@ nav ul li {
 nav ul li a {
   white-space: nowrap;
   font-size: 1.4em;
-  color: #800020;
+  color: #02827e;
 }
 
 nav ul li a:hover {
-  color: #b3002d;
+  color: #03b4af;
 }
 
 #hamburger-icon {
@@ -99,102 +97,91 @@ nav ul li a:hover {
 }
 
 #call-to-action {
-  background-image: url("/img/klusjes-in-zwolle.jpg");
-  background-size: cover;
-  background-position: 20% 20%;
-  background-color: #adadad;
-  background-blend-mode: multiply;
   display: flex;
+  justify-content: space-between;
 }
 
-#cta-tekst {
-  flex: 1;
-  padding: 5% 0 5% 10%;
-  text-align: center;
+#cta-voordelen {
+  width: 29%;
+  border: 2px solid #02827e;
+  position: relative;
 }
 
-#cta-tekst h2 {
+#cta-voordelen h2 {
   color: white;
-  font-size: 6em;
-  font-weight: 600;
-  text-shadow: 5px 5px 5px black;
-}
-
-#cta-form {
-  flex: 1;
-  padding: 4% 10%;
-  flex-direction: column;
-  background-color: #800020;
-  -webkit-clip-path: circle(45%);
-          clip-path: circle(45%);
-}
-
-#cta-form form {
+  background-color: #02827e;
+  padding: 10px 0;
+  width: 100%;
   text-align: center;
+  font-size: 1.7em;
+}
+
+#cta-voordelen #voordelen-lijst {
+  background-color: rgba(130, 34, 2, 0.1);
+  position: absolute;
   display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin: auto;
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
 }
 
-#cta-form form h2 {
-  flex: 1;
-  font-size: 2.4em;
-  font-weight: 100;
-  font-style: italic;
-  margin-bottom: 30px;
-  color: white;
+#cta-voordelen #voordelen-lijst ul {
+  position: absolute;
+  list-style: none;
+  top: 100px;
 }
 
-#cta-form form input {
-  font-size: 2em;
-  flex: 1;
-}
-
-#cta-form form textarea {
-  font-size: 2em;
-  flex: 1;
+#cta-voordelen #voordelen-lijst ul li {
+  margin-left: 50px;
+  font-size: 1.5em;
   margin-bottom: 15px;
+  font-style: italic;
 }
 
-#cta-form form button {
-  flex: 1;
-  font-size: 2em;
-  background-color: #208000;
-  border: 0;
-  box-shadow: 0;
-  padding: 15px 0;
+#cta-voordelen #voordelen-lijst a {
+  margin: auto auto 10px auto;
+}
+
+#cta-voordelen #voordelen-lijst a button {
+  font-size: 1.8em;
+  background-color: #822202;
   color: white;
+  padding: 15px;
+  text-align: center;
+  border: none;
+  box-shadow: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-#cta-form form button:hover {
-  background-color: #248f00;
+#cta-voordelen #voordelen-lijst a button:hover {
+  background-color: #912602;
 }
 
-h1 {
-  font-weight: 100;
-  font-style: italic;
-  font-size: 3em;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.voordelen {
-  display: flex;
-  height: 400px;
-  margin-top: 100px;
-  margin-bottom: 1000px;
-}
-
-.voordelen .img {
-  flex: 1;
-  background-image: url("/img/klusjes-in-zwolle.jpg");
+#cta-image {
+  width: 69%;
+  height: 500px;
+  background-image: url("/img/klussenbedrijf-in-zwolle-nodig.jpg");
   background-size: cover;
+  background-position: bottom;
+  background-color: #adadad;
+  background-blend-mode: multiply;
+  position: relative;
+  text-align: center;
 }
 
-.voordelen .opsomming-voordelen {
-  flex: 1;
+#cta-image h2 {
+  color: white;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#cta-image #cta-tekst {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
 }
 
 @media (max-width: 996px) {
@@ -202,7 +189,7 @@ h1 {
     width: 0;
     margin: 0;
     padding-top: 100px;
-    background-color: #800020;
+    background-color: #02827e;
     position: fixed;
     flex-direction: column;
     justify-content: flex-start;
@@ -229,16 +216,6 @@ h1 {
     display: inline-block;
     margin: auto;
     cursor: pointer;
-  }
-
-  #call-to-action {
-    flex-direction: column;
-  }
-
-  #cta-form {
-    -webkit-clip-path: none;
-            clip-path: none;
-    opacity: 0.8;
   }
 }
 

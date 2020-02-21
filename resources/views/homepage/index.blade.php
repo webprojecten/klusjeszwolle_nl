@@ -25,25 +25,30 @@
         </div>
     </div>
     <div id="header-buffer"></div>
-    <div id="call-to-action">
-        <div id="cta-tekst" class="transparent-from-left">
-            <h2>Geen enkele klus in Zwolle is ons één teveel</h2>
-        </div>
-        <div id="cta-form">
-            <form action="">
-                <h2>Vraag een offerte aan</h2>
-                <input type="text" name="email" id="email" placeholder="Email">
-                <textarea name="omschrijving" id="omschrijving" cols="30" rows="7" placeholder="Omschrijving"></textarea>
-                <button>Offerte aanvragen</button>
-            </form>
-        </div>
-    </div>
     <div class="container">
-        <h1 class="primair">Een klussenbedrijf voor al uw klusjes? Bij klusjesZwolle.nl staan wij dag én nacht voor u klaar.</h1>
+        <div id="call-to-action">
+            <div id="cta-voordelen">
+                <h2>Voordelen van klusjeszwolle.nl</h2>
+                <div id="voordelen-lijst">
+                    <ul>
+                        <li>Snel klaar!</li>
+                        <li>Goede prijs</li>
+                        <li>Alles netjes afgewerkt</li>
+                        <li>Geen gezeik achteraf</li>
+                        <li>100% tevreden</li>
+                    </ul>
+                    <a href=""><button>Offerte aanvragen</button></a>
+                </div>
+            </div>
+            <div id="cta-image">
+                <div id="cta-tekst">
+                    <h2>Klussenbedrijf nodig?</h2>
+                    <h2>Wij kunnen u helpen</h2>
+                    <h2>Ook spoed mogelijk</h2>
+                </div>
+            </div>
+        </div>
     </div>
-    <section class="voordelen">
-
-    </section>
     <script src="{{ asset('js/js_events.js') }}"></script>
 </body>
 </html>
