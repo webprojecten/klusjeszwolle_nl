@@ -36,7 +36,7 @@ nav a:hover {
 }
 
 #header {
-  height: 70px;
+  height: 90px;
   position: fixed;
   background-color: white;
   width: 100%;
@@ -46,19 +46,19 @@ nav a:hover {
 }
 
 #header-buffer {
-  height: 75px;
+  height: 95px;
 }
 
 #logo {
-  font-size: 1.2em;
-  margin: 20px 0;
+  font-size: 1.4em;
+  margin: 30px 0;
 }
 
 #logo-zwolle {
   color: white;
   background-color: #02827e;
   padding: 10px;
-  border-radius: 5px;
+  margin: 0 2px;
 }
 
 nav {
@@ -117,7 +117,7 @@ nav ul li a:hover {
 }
 
 #cta-voordelen #voordelen-lijst {
-  background-color: rgba(130, 34, 2, 0.1);
+  background-color: rgba(2, 130, 126, 0.05);
   position: absolute;
   display: flex;
   top: 5px;
@@ -129,29 +129,29 @@ nav ul li a:hover {
 #cta-voordelen #voordelen-lijst ul {
   position: absolute;
   list-style: none;
-  top: 100px;
+  top: 130px;
 }
 
 #cta-voordelen #voordelen-lijst ul li {
-  margin-left: 50px;
+  color: #666;
+  margin-left: 70px;
   font-size: 1.5em;
   margin-bottom: 15px;
   font-style: italic;
 }
 
 #cta-voordelen #voordelen-lijst a {
-  margin: auto auto 10px auto;
+  margin: auto auto 20px auto;
 }
 
 #cta-voordelen #voordelen-lijst a button {
   font-size: 1.8em;
   background-color: #822202;
   color: white;
-  padding: 15px;
+  padding: 15px 40px;
   text-align: center;
   border: none;
   box-shadow: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -182,6 +182,78 @@ nav ul li a:hover {
   position: absolute;
   bottom: 15px;
   right: 15px;
+}
+
+h1 {
+  font-size: 2.7em;
+  font-weight: 100;
+  font-style: italic;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.icons {
+  height: 400px;
+  background-color: rgba(2, 130, 126, 0.1);
+  margin-top: 50px;
+}
+
+.content {
+  margin-top: 50px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #666;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content img {
+  width: 28%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content article {
+  margin-left: 1%;
+  font-size: 1.3em;
+  width: 68%;
+}
+
+.content article h2 {
+  margin-bottom: 10px;
+}
+
+.content article p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+#mogelijkheden {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 100px 0;
+  text-align: center;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #666;
+}
+
+#mogelijkheden img {
+  width: 33%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.no-border {
+  border: none;
+}
+
+footer {
+  margin-top: 150px;
+  width: 100%;
+  background-color: #02827e;
+  color: white;
+  padding: 20px 0;
 }
 
 @media (max-width: 996px) {

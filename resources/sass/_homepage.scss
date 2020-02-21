@@ -1,5 +1,5 @@
 #header {
-    height: 70px;
+    height: 90px;
     position:fixed;
     background-color: white;
     width: 100%;
@@ -9,19 +9,19 @@
 }
 
 #header-buffer {
-    height: 75px;
+    height: 95px;
 }
 
 #logo {
-    font-size:1.2em;
-    margin: 20px 0;
+    font-size:1.4em;
+    margin: 30px 0;
 }
 
 #logo-zwolle {
     color: white;
     background-color: $primair;
     padding: 10px;
-    border-radius: 5px;
+    margin: 0 2px;
 }
 
 nav {
@@ -73,7 +73,7 @@ nav {
         font-size: 1.7em;
     }
     #voordelen-lijst {
-        background-color: rgba($contrast, .1);
+        background-color: rgba($primair, .05);
         position: absolute;
         display: flex;
         top: 5px;
@@ -83,25 +83,25 @@ nav {
         ul {
             position: absolute;
             list-style: none;
-            top: 100px;
+            top: 130px;
             li {
-                margin-left: 50px;
+                color: #666;
+                margin-left: 70px;
                 font-size: 1.5em;
                 margin-bottom: 15px;
                 font-style:italic;
             }
         }
         a{
-            margin: auto auto 10px auto;
+            margin: auto auto 20px auto;
             button {
                 font-size: 1.8em;
                 background-color: $contrast;
                 color: white;
-                padding: 15px;
+                padding: 15px 40px;
                 text-align: center;
                 border: none;
                 box-shadow: none;
-                border-radius: 5px;
                 cursor: pointer;
                 &:hover {
                     background-color: lighten($contrast, 3%);
@@ -134,6 +134,69 @@ nav {
     }
 }
 
+h1 {
+    font-size: 2.7em;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+    margin-top: 40px;
+}
+.icons {
+    height: 400px;
+    background-color: rgba($primair, .1);
+    margin-top: 50px;
+}
+
+.content {
+    margin-top: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #666;
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 28%;
+        object-fit: cover;
+    }
+    article {
+        margin-left: 1%;
+        font-size: 1.3em;
+        width: 68%;
+        h2 {
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+#mogelijkheden {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 100px 0;
+    text-align: center;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #666;
+    img {
+        width: 33%;
+        object-fit:cover;
+        cursor: pointer;
+    }
+}
+
+.no-border {
+    border: none;
+}
+
+footer {
+    margin-top: 150px;
+    width: 100%;
+    background-color: $primair;
+    color: white;
+    padding: 20px 0;
+}
 
 @media (max-width: 996px) {
     nav {
