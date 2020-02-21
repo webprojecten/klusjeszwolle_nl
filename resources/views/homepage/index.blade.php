@@ -31,7 +31,8 @@
                 <h2>Voordelen van klusjeszwolle.nl</h2>
                 <div id="voordelen-lijst">
                     <ul>
-                        <li>Snel klaar!</li>
+                        <li>Snel klaar</li>
+                        <li ><a href="{{ asset('/spoedverbouwing-in-zwolle') }}" class="contrast">Spoed mogelijk!</a></li>
                         <li>Goede prijs</li>
                         <li>Alles netjes afgewerkt</li>
                         <li>Geen gezeik achteraf</li>
@@ -42,9 +43,9 @@
             </div>
             <div id="cta-image">
                 <div id="cta-tekst">
-                    <h2>Klussenbedrijf nodig?</h2>
-                    <h2>Wij kunnen u helpen</h2>
-                    <h2>Ook spoed mogelijk</h2>
+                    <h2 class="fadeIn_1">Klussenbedrijf nodig?</h2>
+                    <h2 class="fadeIn_2">Wij kunnen u helpen</h2>
+                    <h2 class="fadeIn_3">Zelfs met spoed!</h2>
                 </div>
             </div>
         </div>

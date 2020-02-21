@@ -5,11 +5,11 @@
 }
 
 .primair {
-  color: #02827e;
+  color: #02827e !important;
 }
 
 .contrast {
-  color: #822202;
+  color: #822202 !important;
 }
 
 .container {
@@ -103,7 +103,6 @@ nav ul li a:hover {
 
 #cta-voordelen {
   width: 29%;
-  border: 2px solid #02827e;
   position: relative;
 }
 
@@ -117,18 +116,17 @@ nav ul li a:hover {
 }
 
 #cta-voordelen #voordelen-lijst {
-  background-color: rgba(2, 130, 126, 0.05);
+  background-color: rgba(2, 130, 126, 0.1);
   position: absolute;
   display: flex;
-  top: 5px;
-  bottom: 5px;
-  left: 5px;
-  right: 5px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 #cta-voordelen #voordelen-lijst ul {
   position: absolute;
-  list-style: none;
   top: 130px;
 }
 
@@ -168,7 +166,7 @@ nav ul li a:hover {
   background-color: #adadad;
   background-blend-mode: multiply;
   position: relative;
-  text-align: center;
+  text-align: right;
 }
 
 #cta-image h2 {
@@ -182,6 +180,28 @@ nav ul li a:hover {
   position: absolute;
   bottom: 15px;
   right: 15px;
+}
+
+.fadeIn_1,
+.fadeIn_2,
+.fadeIn_3 {
+  opacity: 0;
+}
+
+.fadeIn_1 {
+  transition: all 2s ease;
+}
+
+.fadeIn_2 {
+  transition: all 2s 1.5s ease;
+}
+
+.fadeIn_3 {
+  transition: all 2s 3s ease;
+}
+
+.fade {
+  opacity: 1 !important;
 }
 
 h1 {
@@ -288,6 +308,10 @@ footer {
     display: inline-block;
     margin: auto;
     cursor: pointer;
+  }
+
+  #mogelijkheden img {
+    width: 50%;
   }
 }
 

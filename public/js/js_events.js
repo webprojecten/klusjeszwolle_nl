@@ -78,11 +78,15 @@ function closeNav() {
 }
 
 
-// cirkel animation 
-// var cta_tekst = document.querySelector('#cta-tekst');
-// window.onload = function() {
-//     this.setTimeout(function(){this.cta_tekst.classList.add('opaque-from-left')}, 150);
-// }
+// fadIn 
+var fade_in_1 = document.querySelector('.fadeIn_1');
+var fade_in_2 = document.querySelector('.fadeIn_2');
+var fade_in_3 = document.querySelector('.fadeIn_3');
+window.onload = function() {
+    this.setTimeout(function(){this.fade_in_1.classList.add('fade')}, 150);
+    this.setTimeout(function(){this.fade_in_2.classList.add('fade')}, 150);
+    this.setTimeout(function(){this.fade_in_3.classList.add('fade')}, 150);
+}
 
 // sidenav
 var nav_links = document.querySelector('#nav-links');

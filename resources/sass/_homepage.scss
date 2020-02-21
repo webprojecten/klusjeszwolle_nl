@@ -62,7 +62,7 @@ nav {
 
 #cta-voordelen {
     width: 29%;
-    border: 2px solid $primair;
+    // border: 1px dotted #eee;
     position: relative;
     h2 {
         color: white;
@@ -73,16 +73,15 @@ nav {
         font-size: 1.7em;
     }
     #voordelen-lijst {
-        background-color: rgba($primair, .05);
+        background-color: rgba($primair, .1);
         position: absolute;
         display: flex;
-        top: 5px;
-        bottom:5px;
-        left: 5px;
-        right: 5px;
+        top: 0px;
+        bottom:0px;
+        left: 0px;
+        right: 0px;
         ul {
             position: absolute;
-            list-style: none;
             top: 130px;
             li {
                 color: #666;
@@ -120,7 +119,7 @@ nav {
     background-color:#adadad;
     background-blend-mode: multiply;
     position: relative;
-    text-align:center;
+    text-align:right;
     h2 {
         color: white;
         font-size: 2em;
@@ -132,6 +131,28 @@ nav {
         bottom: 15px;
         right: 15px;
     }
+}
+
+.fadeIn_1,
+.fadeIn_2,
+.fadeIn_3 {
+    opacity:0;
+}
+
+.fadeIn_1 {
+    transition: all 2s ease;
+}
+
+.fadeIn_2 {
+    transition: all 2s 1.5s ease;
+}
+
+.fadeIn_3 {
+    transition: all 2s 3s ease;
+}
+
+.fade {
+    opacity: 1 !important;
 }
 
 h1 {
@@ -230,5 +251,8 @@ footer {
         display: inline-block;
         margin: auto;
         cursor: pointer;
+    }
+    #mogelijkheden img {
+        width: 50%;
     }
 }
