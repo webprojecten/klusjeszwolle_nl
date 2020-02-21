@@ -1,6 +1,4 @@
 // todo wat als js uit staat?
-// var navbar = document.querySelector('#navbar');
-// var logo = document.querySelector('#logo');
 var transFromBottom_1 = document.querySelectorAll('.transparent-from-bottom_1');
 var transFromBottom_2 = document.querySelectorAll('.transparent-from-bottom_2');
 var transFromBottom_3 = document.querySelectorAll('.transparent-from-bottom_3');
@@ -43,23 +41,7 @@ function requestTick() {
     }
 }
 
-var navLinks = document.querySelector('#navbarSupportedContent');
-
 function update() {
-    if(lastScrollYTop > 150){
-        navbar.classList.remove("navbar-big");
-        logo.classList.remove("logo-big");
-        navbar.classList.add("navbar-small");
-        logo.classList.add("logo-small");
-        navLinks.style.marginTop = 0;
-    } else if (lastScrollYTop <= 150 && navbar.classList.contains('navbar-small')){
-        navbar.classList.remove("navbar-small");
-        logo.classList.remove("logo-small");
-        navbar.classList.add("navbar-big");
-        logo.classList.add("logo-big");
-        navLinks.style.marginTop = '35px';
-    }
-
     for(var i = 0; i < elementsLength; i++) {
         var trans = null,
         transTop  = [];
@@ -80,6 +62,7 @@ function update() {
 
 window.addEventListener('scroll', onScroll, false); 
 
+// todo kijk of ik dit nodig heb
 function toggleNav() {
     var width = document.getElementById("mySidebar").style.width;
     console.log(width);
@@ -94,13 +77,22 @@ function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
 }
 
-var cta_content = document.querySelector('#cta-content');
+
+// cirkel animation 
+var cta_tekst = document.querySelector('#cta-tekst');
 window.onload = function() {
-    this.setTimeout(function(){this.cta_content.classList.add('opaque-from-bottom_1')}, 150);
+    this.setTimeout(function(){this.cta_tekst.classList.add('opaque-from-left')}, 150);
 }
 
-var aanmelden = document.querySelector('#aanmeldformulier');
+// sidenav
+var nav_links = document.querySelector('#nav-links');
+var hamburger = document.querySelector('#hamburger-icon');
 
-function scrollAanmelden(){
-    aanmelden.scrollIntoView();
-}
+hamburger.addEventListener('click', function(){
+    if(nav_links.style.width == 0){
+        nav_links.style.width = '250px';
+    } else {
+        nav_links.style.width = null;
+    }
+});
+

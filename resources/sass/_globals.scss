@@ -1,7 +1,7 @@
-$primair: #3fc9b2;
-$contrast: #c95d3f;
+$primair: #800020;
+$contrast: #208000;
 
-body, html {
+* {
     padding: 0;
     margin:0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -25,6 +25,11 @@ a {
     &:hover {
         text-decoration: underline;
     }
+}
+
+.flex-end {
+    display: flex;
+    align-items: flex-end;
 }
 
 #logo, nav {

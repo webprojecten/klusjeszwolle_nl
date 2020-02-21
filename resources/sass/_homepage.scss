@@ -1,19 +1,194 @@
+#header {
+    border-bottom: 2px solid $primair;
+    height: 70px;
+    position:fixed;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    z-index: 900;
+    padding-bottom: 5px;
+}
+
+#header-buffer {
+    height: 75px;
+}
+
 #logo {
-    margin-top: 30px;
-    font-size: 2em;
-    font-weight: 600;
+    font-size:1.2em;
+    margin: 20px 0;
+    color: rgb(80, 80, 80);
+}
+
+#logo-zwolle {
+    color: white;
+    background-color: $primair;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 nav {
-    color: white;
-    margin-top: 20px;
-    width: 100%;
-    height: 50px;
-    background-color: $primair;
-    border-bottom: 1px solid black;
+    flex: 1;
+    ul {
+        margin: 0 0 5px 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        text-align: right;
+        justify-content:flex-end;
+        li {
+            margin-left: 1%;
+            a {
+                white-space: nowrap;
+                font-size: 1.4em;
+                color: $primair;
+                &:hover {
+                    color: lighten($primair, 10%);
+                }
+            }
+        }
+    }
+}
+
+#hamburger-icon {
+    display: none;
+    img {
+        width: 25px;
+    }
 }
 
 #call-to-action {
-    height: 400px;
+    // height: 600px;
+    background-image:url('/img/klusjes-in-zwolle.jpg');
+    background-size: cover;
+    background-position: 20% 20%;
+    background-color:#adadad;
+    background-blend-mode: multiply;
+    display: flex;
+}
+
+#cta-tekst {
+    flex:1;
+    padding: 5% 0 5% 10%;
+    text-align: center;
+    h2 {
+        color: white;
+        font-size: 6em;
+        font-weight: 600;
+        text-shadow: 5px 5px 5px black;
+    }
+}
+
+#cta-form {
+    flex:1;
+    padding: 4% 10%;
+    flex-direction: column;
     background-color: $primair;
+    clip-path: circle(45%);
+    form {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        h2{
+            flex:1;
+            font-size: 2.4em;
+            font-weight: 100;
+            font-style: italic;
+            margin-bottom: 30px;
+            color: white;
+        }
+        input {
+            font-size: 2em;
+            flex:1;
+            // padding: 5px;
+        }
+        textarea {
+            font-size: 2em;
+            flex:1;
+            margin-bottom: 15px;
+            // padding: 5px;
+        }
+        button {
+            flex:1;
+            font-size: 2em;
+            background-color: $contrast;
+            border: 0;
+            box-shadow:0;
+            padding: 15px 0;
+            color: white;
+            cursor: pointer;
+            &:hover {
+                background-color: lighten($contrast, 3%);
+            }
+        }
+    }
+}
+
+h1 {
+    font-weight: 100;
+    font-style: italic;
+    font-size:3em;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.voordelen {
+    display: flex;
+    height: 400px;
+    margin-top: 100px;
+    margin-bottom: 1000px;
+    .img {
+        flex:1;
+        background-image: url('/img/klusjes-in-zwolle.jpg');
+        background-size: cover;
+    }
+    .opsomming-voordelen{
+        flex:1;
+    }
+}
+
+
+
+@media (max-width: 996px) {
+    nav {
+        ul {
+            width:0;
+            margin: 0;
+            padding-top: 100px;
+            background-color: $primair;
+            position: fixed;
+            flex-direction: column;
+            justify-content: flex-start;
+            left: 0; 
+            top: 0;
+            bottom: 0;
+            overflow: hidden;
+            transition: all 1s ease;
+            z-index: 1000;
+            li {
+                margin-left: 30px;
+                margin-bottom: 20px;
+                text-align: left;
+                a {
+                    font-size: 1em;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    #hamburger-icon {
+        display: inline-block;
+        margin: auto;
+        cursor: pointer;
+    }
+
+    #call-to-action {
+        flex-direction: column;
+    }
+    #cta-form {
+        clip-path: none;
+        opacity:.8;
+    }
 }
