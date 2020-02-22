@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('homepage.index');
 });
+
+Route::get('/filmpje', function () {
+    return view('filmpje.index');
+});

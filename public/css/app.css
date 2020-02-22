@@ -182,6 +182,11 @@ nav ul li a:hover {
   right: 15px;
 }
 
+#cta-image #cta-tekst a:hover {
+  text-decoration: none;
+  font-style: italic;
+}
+
 .fadeIn_1,
 .fadeIn_2,
 .fadeIn_3 {
@@ -193,11 +198,11 @@ nav ul li a:hover {
 }
 
 .fadeIn_2 {
-  transition: all 2s 1.5s ease;
+  transition: all 2s 1s ease;
 }
 
 .fadeIn_3 {
-  transition: all 2s 3s ease;
+  transition: all 2s 2.5s ease;
 }
 
 .fade {
@@ -213,9 +218,31 @@ h1 {
 }
 
 .icons {
-  height: 400px;
   background-color: rgba(2, 130, 126, 0.1);
   margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.icon-container {
+  width: 30%;
+  text-align: center;
+  color: #666;
+  padding: 0 7%;
+  font-size: 1.3em;
+}
+
+.icon-container img {
+  width: 20%;
+}
+
+.icon-container h3 {
+  margin: 20px 0 10px 0;
+}
+
+.icon-container p {
+  font-style: italic;
 }
 
 .content {
@@ -257,11 +284,46 @@ h1 {
   border-bottom: 1px solid #666;
 }
 
-#mogelijkheden img {
+#mogelijkheden .img-container {
+  position: relative;
   width: 33%;
+  cursor: pointer;
+}
+
+#mogelijkheden .img-container img {
   -o-object-fit: cover;
      object-fit: cover;
-  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+#mogelijkheden .img-container .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(2, 130, 126, 0.9);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+#mogelijkheden .img-container .overlay .text {
+  white-space: nowrap;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 600;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#mogelijkheden .img-container:hover .overlay {
+  width: 100%;
 }
 
 .no-border {
@@ -277,6 +339,10 @@ footer {
 }
 
 @media (max-width: 996px) {
+  .container {
+    width: 96%;
+  }
+
   nav ul {
     width: 0;
     margin: 0;
@@ -310,7 +376,7 @@ footer {
     cursor: pointer;
   }
 
-  #mogelijkheden img {
+  #mogelijkheden .img-container {
     width: 50%;
   }
 }

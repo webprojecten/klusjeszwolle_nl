@@ -130,6 +130,12 @@ nav {
         position: absolute;
         bottom: 15px;
         right: 15px;
+        a{
+            &:hover {
+                text-decoration: none;
+                font-style: italic;
+            }
+        }
     }
 }
 
@@ -144,11 +150,11 @@ nav {
 }
 
 .fadeIn_2 {
-    transition: all 2s 1.5s ease;
+    transition: all 2s 1s ease;
 }
 
 .fadeIn_3 {
-    transition: all 2s 3s ease;
+    transition: all 2s 2.5s ease;
 }
 
 .fade {
@@ -163,9 +169,29 @@ h1 {
     margin-top: 40px;
 }
 .icons {
-    height: 400px;
+    // height: 400px;
     background-color: rgba($primair, .1);
     margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.icon-container {
+    width: 30%;
+    text-align: center;
+    color: #666;
+    padding: 0 7%;
+    font-size: 1.3em;
+    img {
+        width: 20%;
+    }
+    h3 {
+        margin: 20px 0 10px 0;
+    }
+    p{
+        font-style:italic;
+    }
 }
 
 .content {
@@ -200,10 +226,42 @@ h1 {
     text-align: center;
     padding-bottom: 100px;
     border-bottom: 1px solid #666;
-    img {
+    .img-container {
+        position: relative;
         width: 33%;
-        object-fit:cover;
         cursor: pointer;
+        img {
+            object-fit:cover;
+            // display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba($primair, .9);
+            overflow: hidden;
+            width: 0;
+            height: 100%;
+            transition: .5s ease;
+            .text {
+                white-space: nowrap; 
+                color: white;
+                font-size: 1.5em;
+                font-weight: 600;
+                position: absolute;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+              }
+        }
+    }
+    .img-container:hover .overlay {
+        width: 100%;
     }
 }
 
@@ -220,6 +278,9 @@ footer {
 }
 
 @media (max-width: 996px) {
+    .container {
+        width: 96%;
+    }
     nav {
         ul {
             width:0;
@@ -252,7 +313,7 @@ footer {
         margin: auto;
         cursor: pointer;
     }
-    #mogelijkheden img {
+    #mogelijkheden .img-container {
         width: 50%;
     }
 }
