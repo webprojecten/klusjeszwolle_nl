@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/filmpje', function () {
     return view('filmpje.index');
 });
+
+Route::get('/filmpje_2', function () {
+    return view('filmpje_2.index');
+});

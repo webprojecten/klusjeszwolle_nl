@@ -9,31 +9,31 @@
 
     <div id="filmpje-container">
         <!-- todo met js aansturen dat het 'filmpje' aangaat als alle images geladen zijn o.t.m. de eerste paar -->
-        <div id="filmpje" style="display: flex;">
+        <div id="clip-viewport" style="display: flex;">
             <img id="img_1" class="img" src="/img/21.jpg" alt="">
             <img id="img_2" class="img" src="/img/22.jpg" alt="">
             <img id="img_3" class="img" src="/img/23.jpg" alt="">
             <img id="img_4" class="img" src="/img/24.jpg" alt="">
             <!----   Tekst loop voor het filmpje    ---->
             <div id="tekst_1" class="tekst">
-                <p>In mei 1940 werd Nederland binnengevallen door het duitse leger.</p>
+                <p>In mei 1940 werd Nederland binnengevallen door het Duitse leger.</p>
             </div>
             <div id="tekst_2" class="tekst">
-                <p>Zij wilden totale overheersing van Nederland</p>
+                <p>Zij waren uit op de totale overheersing van het Nederlandse volk</p>
             </div>
             <div id="tekst_3" class="tekst">
-                <p>Nederland werd hard getroffen door duitse bombardementen</p>
+                <p>Nederland werd hard getroffen door Duitse bombardementen</p>
             </div>
             <div id="tekst_4" class="tekst">
                 <p>
-                    Het leven in ons land was moeilijk doordat mensen constant werden geraalt door het duitse leger
+                    Door de bezetting hadden mensen moeite om werk te vinden en kinderen hadden geen plaats om te spelen
                 </p>
             </div>
             <div id="tekst_5" class="tekst">
                 <p>Veel mensen leefden in armoede</p>
             </div>
             <div id="tekst_6" class="tekst">
-                <p>Maar er was ook reden tot hoop...</p>
+                <p>Maar na 5 uitzichtloze jaren bleek er toch nog hoop te zijn...</p>
             </div>
             <div id="tekst_7" class="tekst">
                 <p>In mei 1945 werd Nederland bevrijd van de Duitsers</p>
@@ -45,13 +45,13 @@
 <?php
     $arr = ['joop', 'piet', 'klaas', '/img/4.jpg'];
     $two = 5;
-    $duration = '60s';
+    $duration = '10s';
 ?>
 
 <style>
-    #filmpje {
-        width: 900px;
-        height: 600px;
+    #clip-viewport {
+        width: 600px;
+        height: 400px;
         position: absolute;
         overflow: hidden;
     }
@@ -62,7 +62,7 @@
         height: 100%;
         display: flex;
         color: #eee;
-        font-size: 2.7em;
+        font-size: 1.8em;
         font-family: Helvetica, sans-serif;
         font-weight: 900;
         text-shadow: 2px 2px black;
@@ -108,8 +108,8 @@
     
     .img {
         opacity: 0;
-        width: 900px;
-        height: 600px;
+        width: 600px;
+        height: 400px;
         position: absolute;
     }
 
@@ -287,7 +287,7 @@
             opacity:1;
             width: 145%;
             height: 145%;
-            top: -15%;
+            top: -35%;
             left: -15%;
         }
     }
@@ -340,10 +340,10 @@
         0% {
             opacity: 0;
         }
-        27%{
+        24%{
             opacity: 0;
         }
-        29%{
+        26%{
             opacity: 1;
         }
         32%{
@@ -367,10 +367,10 @@
         45%{
             opacity: 1;
         }
-        48%{
+        53%{
             opacity: 1;
         }
-        50%{
+        55%{
             opacity: 0
         }
         100% {
@@ -382,19 +382,19 @@
         0% {
             opacity: 0;
         }
-        50%{
+        57%{
             opacity: 0;
         }
-        52%{
+        59%{
             opacity: 1;
         }
-        60%{
+        65%{
             opacity: 1;
         }
-        62%{
+        67%{
             opacity: 0
         }
-        300% {
+        100% {
             opacity: 0;
         }
     }
