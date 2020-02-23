@@ -50,8 +50,8 @@
 
 <style>
     #filmpje {
-        width: 1200px;
-        height: 800px;
+        width: 900px;
+        height: 600px;
         position: absolute;
         overflow: hidden;
     }
@@ -61,11 +61,8 @@
         width: 100%;
         height: 100%;
         display: flex;
-        /* top:30%;
-        left: 20%; */
-        /* margin: auto;  */
         color: #eee;
-        font-size: 4em;
+        font-size: 2.7em;
         font-family: Helvetica, sans-serif;
         font-weight: 900;
         text-shadow: 2px 2px black;
@@ -111,8 +108,8 @@
     
     .img {
         opacity: 0;
-        width: 1200px;
-        height: 800px;
+        width: 900px;
+        height: 600px;
         position: absolute;
     }
 
@@ -173,12 +170,12 @@
             left: 0;
             top:0;
         }
-        15% {
+        18% {
             opacity: 1;
             width: 140%;
             height: 140%;
-            left: -10px;
-            top:-100px;
+            left: -1%;
+            top:-20%;
         }
         20% {
             width: 140%;
@@ -191,8 +188,8 @@
             opacity:0;
         }
         100% {
-            left: -10px;
-            top:-100px;
+            left: -1%;
+            top:-30%;
             opacity:0;
         }
     }
@@ -211,8 +208,8 @@
             height: 100%;
         }
         40% {
-            top: -100px;
-            left: -700px;
+            top: -5%;
+            left: -55%;
             width: 160%;
             height: 160%;
             opacity: 1;
@@ -221,8 +218,8 @@
             opacity: 0;
         }
         100% {
-            top: -100px;
-            left: -700px;
+            top: -5%;
+            left: -85%;
             width: 160%;
             height: 160%;
             opacity: 0;
@@ -290,8 +287,8 @@
             opacity:1;
             width: 145%;
             height: 145%;
-            top: -200px;
-            left: -200px;
+            top: -15%;
+            left: -15%;
         }
     }
 
