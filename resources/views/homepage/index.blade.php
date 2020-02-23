@@ -46,9 +46,9 @@
             </div>
             <div id="cta-image">
                 <div id="cta-tekst">
-                    <h2 class="fadeIn_1">Klussenbedrijf nodig?</h2>
-                    <h2 class="fadeIn_2">Wij kunnen u helpen</h2>
-                    <a href="{{ asset('#') }}"><h2 class="fadeIn_3">Zelfs met spoed!</h2></a>
+                    <h2 class="fadeIn_1" style="opacity:0;">Klussenbedrijf nodig?</h2>
+                    <h2 class="fadeIn_2" style="opacity:0;">Wij kunnen u helpen</h2>
+                    <a href="{{ asset('#') }}"><h2 class="fadeIn_3" style="opacity:0;">Zelfs met spoed!</h2></a>
                 </div>
             </div>
         </div>

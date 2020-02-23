@@ -86,7 +86,7 @@ nav {
             li {
                 color: #666;
                 margin-left: 70px;
-                font-size: 1.5em;
+                font-size: 1.2em;
                 margin-bottom: 15px;
                 font-style:italic;
             }
@@ -94,7 +94,7 @@ nav {
         a{
             margin: auto auto 20px auto;
             button {
-                font-size: 1.8em;
+                font-size: 1.3em;
                 background-color: $contrast;
                 color: white;
                 padding: 15px 40px;
@@ -122,9 +122,7 @@ nav {
     text-align:right;
     h2 {
         color: white;
-        font-size: 2em;
         font-weight: 700;
-        margin-bottom: 15px;
     }
     #cta-tekst {
         position: absolute;
@@ -143,18 +141,28 @@ nav {
 .fadeIn_2,
 .fadeIn_3 {
     opacity:0;
+    margin-bottom: 15px;
 }
 
 .fadeIn_1 {
-    transition: all 2s ease;
+    -webkit-transition: opacity 2s ease;
+    -moz-transition: opacity 2s ease;
+    -o-transition: opacity 2s ease;
+    transition: opacity 2s ease-in-out;
 }
 
 .fadeIn_2 {
-    transition: all 2s 1s ease;
+    -webkit-transition: opacity 2s 1s ease;
+    -moz-transition: opacity 2s 1s ease;
+    -o-transition: opacity 2s 1s ease;
+    transition: opacity 2s 1s ease;
 }
 
 .fadeIn_3 {
-    transition: all 2s 2.5s ease;
+    -webkit-transition: opacity 2s 2.5s ease;
+    -moz-transition: opacity 2s 2.5s ease;
+    -o-transition: opacity 2s 2.5s ease;
+    transition: opacity 2s 2.5s ease;
 }
 
 .fade {
@@ -169,7 +177,6 @@ h1 {
     margin-top: 40px;
 }
 .icons {
-    // height: 400px;
     background-color: rgba($primair, .1);
     margin-top: 50px;
     display: flex;
