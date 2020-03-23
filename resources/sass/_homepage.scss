@@ -25,6 +25,9 @@
 }
 
 nav {
+    #logo-sidebar {
+        display: none;
+    }
     flex: 1;
     ul {
         margin: 0 0 5px 0;
@@ -284,12 +287,18 @@ footer {
     padding: 20px 0;
 }
 
+// media queries
 @media (max-width: 996px) {
     .container {
         width: 96%;
     }
     nav {
         ul {
+            #logo-sidebar {
+                display: block;
+                color: white !important;
+                left: 20px;
+            }
             width:0;
             margin: 0;
             padding-top: 100px;

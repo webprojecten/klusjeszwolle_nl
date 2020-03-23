@@ -13,10 +13,10 @@
                 Klusjes<span id="logo-zwolle">Zwolle</span>.nl
             </div>
             <nav>
-                <div id="logo" class="primair">
-                    Klusjes<span id="logo-zwolle">Zwolle</span>.nl
-                </div>
                 <ul id="nav-links">
+                    <div id="logo-sidebar" class="primair">
+                        Klusjes<span id="logo-zwolle">Zwolle</span>.nl
+                    </div>
                     <li><a href="{{ asset('#') }}">Home</a></li>
                     <li><a href="{{ asset('#') }}">Klussen in Zwolle</a></li>
                     <li><a href="{{ asset('#') }}">Contact</a></li>

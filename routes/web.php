@@ -14,9 +14,3 @@
 Route::get('/', function () {
     return view('homepage.index');
 });
-
-Route::get('/filmpje', function () {
-    return view('filmpje.index');
-});
-
-Route::get( '/filmpje_2', 'Filmpje2Controller@show');

@@ -65,6 +65,10 @@ nav {
   flex: 1;
 }
 
+nav #logo-sidebar {
+  display: none;
+}
+
 nav ul {
   margin: 0 0 5px 0;
   padding: 0;
@@ -356,6 +360,12 @@ footer {
     overflow: hidden;
     transition: all 1s ease;
     z-index: 1000;
+  }
+
+  nav ul #logo-sidebar {
+    display: block;
+    color: white !important;
+    left: 20px;
   }
 
   nav ul li {
