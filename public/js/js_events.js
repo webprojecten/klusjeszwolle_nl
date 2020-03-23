@@ -62,7 +62,6 @@ function update() {
 
 window.addEventListener('scroll', onScroll, false); 
 
-// todo kijk of ik dit nodig heb
 function toggleNav() {
     var width = document.getElementById("mySidebar").style.width;
     console.log(width);
