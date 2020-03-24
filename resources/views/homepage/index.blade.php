@@ -97,7 +97,7 @@
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos neque voluptatem sequi totam nam laudantium at reprehenderit labore repellat, numquam debitis ipsam necessitatibus repudiandae, voluptas nisi consectetur explicabo corrupti quia facere natus fuga velit omnis odit mollitia. Magnam sunt, eveniet porro aperiam, molestias aliquid cupiditate possimus architecto unde esse corrupti.
                 </p>
             </article>
-            <img src="{{ asset('/img/klusjes-in-zwolle.jpg') }}" alt="Klusjes in Zwolle" title="Klusjes in Zwolle">
+            <img src="{{ asset('/img/schilderen.jpg') }}" alt="Klusjes in Zwolle" title="Klusjes in Zwolle">
 
         </div>
         <!-- <h2 class="primair">Voorbeelden klussen in Zwolle</h2> -->
@@ -140,7 +140,7 @@
             </div>
         </div>
         <div class="content no-border">
-            <img src="{{ asset('/img/klusjes-in-zwolle.jpg') }}" alt="Klusjes in Zwolle" title="Klusjes in Zwolle">
+            <img src="{{ asset('/img/gereedschap.jpg') }}" alt="Klusjes in Zwolle" title="Klusjes in Zwolle">
             <article>
                 <h2 class="primair">Klussenbedrijf in Zwolle zoeken?</h2>
                 <p>
