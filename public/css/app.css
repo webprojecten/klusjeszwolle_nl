@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   padding: 0;
   margin: 0;
@@ -61,35 +63,49 @@ nav a:hover {
   margin: 0 2px;
 }
 
-nav {
-  flex: 1;
+#nav {
+  margin-left: auto;
 }
 
-nav #logo-sidebar {
-  display: none;
-}
-
-nav ul {
-  margin: 0 0 5px 0;
+#nav ul {
+  margin: 0 20px 0 auto;
   padding: 0;
   list-style: none;
   display: flex;
-  text-align: right;
-  justify-content: flex-end;
 }
 
-nav ul li {
-  margin-left: 1%;
+#nav ul .sidebar-close {
+  display: none;
+  color: white;
 }
 
-nav ul li a {
-  white-space: nowrap;
-  font-size: 1.4em;
+#nav ul #logo-sidebar {
+  display: none;
+  color: white !important;
+  font-size: 1.3em;
+  margin-bottom: 70px !important;
+}
+
+#nav ul #logo-sidebar #logo-zwolle {
+  margin-left: 5px;
+  background-color: white;
   color: #02827e;
 }
 
-nav ul li a:hover {
-  color: #03b4af;
+#nav ul li {
+  margin-left: 0;
+}
+
+#nav ul li a {
+  white-space: nowrap;
+  display: block;
+  padding: 10px 10px;
+  font-size: 1.1em;
+  color: #02827e;
+}
+
+#nav ul li a:hover {
+  color: #01504d;
 }
 
 #hamburger-icon {
@@ -346,47 +362,119 @@ footer {
     width: 96%;
   }
 
-  nav ul {
+  #header {
+    height: 60px;
+    font-size: 0.8em;
+  }
+
+  #header-buffer {
+    height: 60px;
+  }
+
+  #logo {
+    margin: auto 0 auto 0 !important;
+  }
+
+  #nav {
     width: 0;
     margin: 0;
-    padding-top: 100px;
-    background-color: #02827e;
-    position: fixed;
-    flex-direction: column;
-    justify-content: flex-start;
     left: 0;
     top: 0;
-    bottom: 0;
+    bottom: -100px;
     overflow: hidden;
     transition: all 1s ease;
-    z-index: 1000;
+    position: fixed;
+    background-color: #02827e;
   }
 
-  nav ul #logo-sidebar {
+  #nav ul {
+    padding-top: 100px;
+    flex-direction: column;
+    z-index: 100001;
+  }
+
+  #nav ul .sidebar-close {
     display: block;
-    color: white !important;
-    left: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-weight: 600;
+    font-size: 2.1em;
+    cursor: pointer;
   }
 
-  nav ul li {
+  #nav ul #logo-sidebar {
+    display: block;
+    width: 6em;
+    margin: 0 0 35px 45px;
+  }
+
+  #nav ul li {
     margin-left: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: left;
+    border: none;
   }
 
-  nav ul li a {
+  #nav ul li a {
     font-size: 1em;
     color: white;
   }
 
+  #nav ul li .sub-menu-link:after {
+    content: " \BB";
+  }
+
   #hamburger-icon {
     display: inline-block;
-    margin: auto;
+    margin: auto 20px auto auto;
     cursor: pointer;
+  }
+
+  #call-to-action {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  #cta-voordelen {
+    width: 96%;
+    margin: 30px auto 0;
+    height: 500px;
+    order: 2;
+  }
+
+  #cta-image {
+    width: 96%;
+    height: 400px;
+    margin: 0 auto;
+    order: 1;
+  }
+
+  .icons {
+    flex-direction: column;
+  }
+
+  .icons .icon-container {
+    width: 96%;
+    margin: 40px auto;
+    padding: 0;
+  }
+
+  .content {
+    justify-content: space-between;
+  }
+
+  .content img {
+    width: 15%;
+  }
+
+  .content article {
+    width: 80%;
   }
 
   #mogelijkheden .img-container {
     width: 50%;
+    font-size: 0.55em;
   }
 }
 

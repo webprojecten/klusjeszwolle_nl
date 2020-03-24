@@ -12,8 +12,9 @@
             <div id="logo" class="primair">
                 Klusjes<span id="logo-zwolle">Zwolle</span>.nl
             </div>
-            <nav>
+            <nav id="nav">
                 <ul id="nav-links">
+                    <div class="sidebar-close" onclick="closeNav()">&times;</div>
                     <div id="logo-sidebar" class="primair">
                         Klusjes<span id="logo-zwolle">Zwolle</span>.nl
                     </div>

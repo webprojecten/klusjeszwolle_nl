@@ -62,20 +62,55 @@ function update() {
 
 window.addEventListener('scroll', onScroll, false); 
 
-function toggleNav() {
-    var width = document.getElementById("mySidebar").style.width;
-    console.log(width);
-    if(width === "250px"){
-        document.getElementById("mySidebar").style.width = 0;
+// function toggleNav() {
+//     var width = document.getElementById("mySidebar").style.width;
+//     console.log(width);
+//     if(width === "250px"){
+//         document.getElementById("mySidebar").style.width = 0;
+//     } else {
+//         document.getElementById("mySidebar").style.width = "250px";
+//     }
+// }
+
+// function closeNav() {
+//     document.getElementById("mySidebar").style.width = "0";
+// }
+
+var nav_links = document.querySelector('#nav');
+var hamburger = document.querySelector('#hamburger-icon');
+
+hamburger.addEventListener('click', function(){
+    if(nav_links.style.width == 0){
+        nav_links.style.width = '300px';
     } else {
-        document.getElementById("mySidebar").style.width = "250px";
+        nav_links.style.width = null;
+        // dd_con.classList.remove('dd-resp-show');
+        if (window.getComputedStyle(nav).getPropertyValue('margin-left') == '-250px') {
+            let linksLogo = document.querySelector('#nav-links');
+            linksLogo.style.opacity = 0;
+        }
+    }
+});
+
+
+function closeNav() {
+    nav_links.style.width = null;
+    if (window.getComputedStyle(nav).getPropertyValue('margin-left') == '-250px') {
+        let linksLogo = document.querySelector('#nav-links');
+        linksLogo.style.opacity = 0;
+        setTimeout(function(){
+            linksLogo.style.opacity = 1;
+        }, 1000)
     }
 }
 
-function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
+// zorgt ervoor dat de nav weer op de goede plaats terechtkomt
+window.onresize = function() {
+    if(window.innerWidth > 996) {
+        nav.style.marginLeft = "auto";
+        nav_links.style.width = null;
+    }
 }
-
 
 // fadIn 
 var fade_in_1 = document.querySelector('.fadeIn_1');
@@ -88,14 +123,14 @@ window.onload = function() {
 }
 
 // sidenav
-var nav_links = document.querySelector('#nav-links');
-var hamburger = document.querySelector('#hamburger-icon');
+// var nav_links = document.querySelector('#nav-links');
+// var hamburger = document.querySelector('#hamburger-icon');
 
-hamburger.addEventListener('click', function(){
-    if(nav_links.style.width == 0){
-        nav_links.style.width = '250px';
-    } else {
-        nav_links.style.width = null;
-    }
-});
+// hamburger.addEventListener('click', function(){
+//     if(nav_links.style.width == 0){
+//         nav_links.style.width = '250px';
+//     } else {
+//         nav_links.style.width = null;
+//     }
+// });
 

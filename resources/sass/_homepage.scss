@@ -24,26 +24,38 @@
     margin: 0 2px;
 }
 
-nav {
-    #logo-sidebar {
-        display: none;
-    }
-    flex: 1;
+#nav {
+    margin-left: auto;
     ul {
-        margin: 0 0 5px 0;
+        .sidebar-close {
+            display: none;
+            color: white;
+        }
+        #logo-sidebar {
+            display: none;
+            color: white !important;
+            font-size: 1.3em;
+            margin-bottom:70px !important;
+            #logo-zwolle {
+                margin-left: 5px;
+                background-color: white;
+                color: $primair;
+            }
+        }
+        margin: 0 20px 0 auto;
         padding: 0;
         list-style: none;
         display: flex;
-        text-align: right;
-        justify-content:flex-end;
         li {
-            margin-left: 1%;
+            margin-left: 0;
             a {
                 white-space: nowrap;
-                font-size: 1.4em;
+                display: block;
+                padding: 10px 10px;
+                font-size: 1.1em;
                 color: $primair;
                 &:hover {
-                    color: lighten($primair, 10%);
+                    color: darken($primair, 10%);
                 }
             }
         }
@@ -292,45 +304,109 @@ footer {
     .container {
         width: 96%;
     }
-    nav {
+
+    #header{
+        height: 60px;
+        font-size: 0.8em;
+    }
+    #header-buffer{
+        height: 60px;
+    }
+    #logo {
+        margin: auto 0 auto 0 !important;
+    }
+
+    #nav {
+        width:0;
+        margin: 0;
+        left: 0; 
+        top: 0;
+        bottom: -100px;
+        overflow: hidden;
+        transition: all 1s ease;
+        position: fixed;
+        background-color: $primair;
         ul {
+            .sidebar-close {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-weight: 600;
+                font-size: 2.1em;
+                cursor: pointer;
+            }
             #logo-sidebar {
                 display: block;
-                color: white !important;
-                left: 20px;
+                width: 6em;
+                margin: 0 0 35px 45px;
             }
-            width:0;
-            margin: 0;
             padding-top: 100px;
-            background-color: $primair;
-            position: fixed;
             flex-direction: column;
-            justify-content: flex-start;
-            left: 0; 
-            top: 0;
-            bottom: 0;
-            overflow: hidden;
-            transition: all 1s ease;
-            z-index: 1000;
+            z-index: 100001;
             li {
                 margin-left: 30px;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
                 text-align: left;
+                border: none;
                 a {
                     font-size: 1em;
                     color: white;
+                }
+                .sub-menu-link:after {
+                    content: " »"
                 }
             }
         }
     }
 
+
     #hamburger-icon {
         display: inline-block;
-        margin: auto;
+        margin: auto 20px auto auto;
         cursor: pointer;
+    }
+
+    #call-to-action {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #cta-voordelen {
+        width: 96%;
+        margin: 30px auto 0;
+        height: 500px;
+        order: 2;
+    }
+
+    #cta-image {
+        width: 96%;
+        height: 400px;
+        margin: 0 auto;
+        order: 1;
+    }
+
+    .icons {
+        flex-direction: column;
+        .icon-container {
+            width: 96%;
+            margin: 40px auto;
+            padding: 0;
+        }
+    }
+
+    .content {
+        justify-content: space-between;
+        img {
+            width: 15%;
+        }
+        article {
+            width: 80%;
+        }
     }
     
     #mogelijkheden .img-container {
         width: 50%;
+        font-size: 0.55em;
     }
 }
