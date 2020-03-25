@@ -152,7 +152,7 @@
         padding: 10px 0;
         width: 100%;
         text-align: center;
-        font-size: 1.7em;
+        font-size: 1.6em;
     }
     #voordelen-lijst {
         background-color: rgba($primair, .1);
@@ -164,7 +164,7 @@
         right: 0px;
         ul {
             position: absolute;
-            top: 130px;
+            top: 120px;
             width: 100%;
             li {
                 color: #666;
@@ -225,6 +225,10 @@
 
 #cta-image-klussen-zwolle {
     background-image: url('/img/gereedschap.jpg');
+}
+
+#cta-image-badkamer-verbouwen {
+    background-image: url('/img/badkamer-verbouwen-zwolle.jpg');
 }
 
 .fadeIn_1,
