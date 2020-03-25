@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('homepage.index');
 });
+
+Route::get('/klussen-zwolle', function () {
+    return view('klussen-zwolle.index');
+});

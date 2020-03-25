@@ -62,20 +62,6 @@ function update() {
 
 window.addEventListener('scroll', onScroll, false); 
 
-// function toggleNav() {
-//     var width = document.getElementById("mySidebar").style.width;
-//     console.log(width);
-//     if(width === "250px"){
-//         document.getElementById("mySidebar").style.width = 0;
-//     } else {
-//         document.getElementById("mySidebar").style.width = "250px";
-//     }
-// }
-
-// function closeNav() {
-//     document.getElementById("mySidebar").style.width = "0";
-// }
-
 var nav_links = document.querySelector('#nav');
 var hamburger = document.querySelector('#hamburger-icon');
 
@@ -84,7 +70,6 @@ hamburger.addEventListener('click', function(){
         nav_links.style.width = '300px';
     } else {
         nav_links.style.width = null;
-        // dd_con.classList.remove('dd-resp-show');
         if (window.getComputedStyle(nav).getPropertyValue('margin-left') == '-250px') {
             let linksLogo = document.querySelector('#nav-links');
             linksLogo.style.opacity = 0;
@@ -122,15 +107,53 @@ window.onload = function() {
     this.setTimeout(function(){this.fade_in_3.classList.add('fade')}, 150);
 }
 
-// sidenav
-// var nav_links = document.querySelector('#nav-links');
-// var hamburger = document.querySelector('#hamburger-icon');
+// nav dropdown js
+diensten_nav = document.querySelector('#diensten-nav-item');
 
-// hamburger.addEventListener('click', function(){
-//     if(nav_links.style.width == 0){
-//         nav_links.style.width = '250px';
-//     } else {
-//         nav_links.style.width = null;
-//     }
-// });
+dd_diensten = document.querySelector('#dropdown-diensten-item');
+
+diensten_nav.addEventListener('mouseenter', function(){
+    if (window.innerWidth > 996) {
+        dd_diensten.classList.add('dd-show');
+    }
+});
+
+diensten_nav.addEventListener('mouseleave', function(){
+    if (window.innerWidth > 996) {
+        let c = window.getComputedStyle(dd_diensten).getPropertyValue('border-top-style');
+        if (c !== 'hidden') {
+            dd_diensten.classList.remove('dd-show');
+        }
+    }
+});
+
+dd_diensten.addEventListener('mouseleave', function(){
+    if (window.innerWidth > 996) {
+        let c = window.getComputedStyle(diensten_nav).getPropertyValue('border-top-style');
+        if (c !== 'hidden') {
+            dd_diensten.classList.remove('dd-show');
+        }
+    }
+});
+
+// responsive dd nav
+var nav = document.querySelector('#nav');
+var logo = document.querySelector('#logo');
+diensten_nav.addEventListener('click', function(e){
+    if (window.innerWidth <= 996) {
+        e.preventDefault();
+        logo.style.marginLeft = '50px';
+        nav.style.marginLeft = "-250px";
+        dd_diensten.classList.add('dd-resp-show');
+    }
+});
+
+var dd_cl_nav = document.querySelectorAll('.close-dd-nav');
+for ( let i = 0; i < dd_cl_nav.length; i++ ) {
+    dd_cl_nav[i].addEventListener('click', function(){
+        nav.style.marginLeft = "0%";
+        console.log(dd_cl_nav[i].parentElement);
+        dd_cl_nav[i].parentElement.classList.remove('dd-resp-show');
+    });
+}
 

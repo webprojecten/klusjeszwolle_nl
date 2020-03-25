@@ -44,11 +44,10 @@ nav a:hover {
   width: 100%;
   display: flex;
   z-index: 900;
-  padding-bottom: 5px;
 }
 
 #header-buffer {
-  height: 95px;
+  height: 90px;
 }
 
 #logo {
@@ -99,7 +98,7 @@ nav a:hover {
 #nav ul li a {
   white-space: nowrap;
   display: block;
-  padding: 10px 10px;
+  padding: 15px 10px;
   font-size: 1.1em;
   color: #02827e;
 }
@@ -111,7 +110,83 @@ nav a:hover {
 #nav #nav-offerte {
   background-color: #822202;
   color: white;
-  margin-left: 10px;
+  margin: 5px 0 0 10px;
+  padding: 10px 10px;
+}
+
+#dropdown-diensten-item {
+  border-top-style: none;
+}
+
+#dropdown-diensten-item:hover {
+  border-top-style: hidden;
+}
+
+.dropdown-menu-item {
+  background-color: #02827e;
+  border: 1px solid #01504d;
+  box-shadow: 0px 3px 2px #444444;
+  margin-right: 15%;
+  position: fixed;
+  z-index: 11000;
+  display: none;
+}
+
+.dropdown-menu-item a {
+  color: white;
+}
+
+.dropdown-menu-item h5 {
+  color: #fc7e54;
+  text-shadow: 2px 2px #424242;
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.dmi-resp {
+  max-width: 50%;
+}
+
+.dmi-resp ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dmi-resp ul li {
+  margin-bottom: 5px;
+}
+
+#dropdown-diensten-item {
+  right: 115px;
+}
+
+.dd-show {
+  display: block !important;
+}
+
+.dd-menu-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dd-single {
+  flex: 1 0 80%;
+  flex-direction: column;
+  padding: 0 25px 15px 25px;
+}
+
+.dd-double {
+  padding: 0 25px 15px 25px;
+}
+
+.dd-double .dd-groep {
+  flex: 1 0 49%;
+}
+
+.close-dd-nav {
+  display: none;
 }
 
 #hamburger-icon {
@@ -183,10 +258,9 @@ nav a:hover {
   background-color: #912602;
 }
 
-#cta-image {
+.cta-image {
   width: 69%;
   height: 500px;
-  background-image: url("/img/klussenbedrijf-in-zwolle-nodig.jpg");
   background-size: cover;
   background-position: bottom;
   background-color: #adadad;
@@ -195,20 +269,28 @@ nav a:hover {
   text-align: right;
 }
 
-#cta-image h2 {
+.cta-image h2 {
   color: white;
   font-weight: 700;
 }
 
-#cta-image #cta-tekst {
+.cta-image #cta-tekst {
   position: absolute;
   bottom: 15px;
   right: 15px;
 }
 
-#cta-image #cta-tekst a:hover {
+.cta-image #cta-tekst a:hover {
   text-decoration: none;
   font-style: italic;
+}
+
+#cta-image-home {
+  background-image: url("/img/klussenbedrijf-in-zwolle-nodig.jpg");
+}
+
+#cta-image-klussen-zwolle {
+  background-image: url("/img/gereedschap.jpg");
 }
 
 .fadeIn_1,
@@ -475,6 +557,55 @@ footer {
     cursor: pointer;
   }
 
+  .dropdown-menu-item {
+    background-color: #01504d;
+    display: block;
+    opacity: 0;
+    z-index: -1;
+    margin-right: 0%;
+  }
+
+  .dd-resp-show {
+    z-index: 20000;
+    display: block;
+    opacity: 1 !important;
+    position: fixed !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: -100px !important;
+    height: inherit;
+    width: inherit !important;
+    transition: opacity 1s ease;
+    overflow-y: scroll;
+  }
+
+  .close-dd-nav {
+    display: inline-block;
+    font-size: 2.2em;
+    font-weight: 800;
+    cursor: pointer;
+    position: fixed;
+    color: white;
+    top: 80px;
+    right: 30px;
+  }
+
+  .dmi-resp {
+    padding: 20% 10% 10% 20%;
+    max-width: 100%;
+    opacity: 0;
+  }
+
+  .dd-menu-content {
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+
+  .dd-groep {
+    width: 80%;
+  }
+
   #call-to-action {
     flex-direction: column;
     margin: 0;
@@ -487,7 +618,7 @@ footer {
     order: 2;
   }
 
-  #cta-image {
+  .cta-image {
     width: 96%;
     height: 400px;
     margin: 0 auto;

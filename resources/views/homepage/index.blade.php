@@ -17,7 +17,7 @@
                     <a href=""><button>Offerte aanvragen</button></a>
                 </div>
             </div>
-            <div id="cta-image">
+            <div id="cta-image-home" class="cta-image">
                 <div id="cta-tekst">
                     <h2 class="fadeIn_1" style="opacity:0;">Klussenbedrijf nodig?</h2>
                     <h2 class="fadeIn_2" style="opacity:0;">Wij kunnen u helpen</h2>

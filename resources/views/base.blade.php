@@ -19,8 +19,8 @@
                         Klusjes<span id="logo-zwolle">Zwolle</span>.nl
                     </div>
                     <li><a href="{{ asset('#') }}">Home</a></li>
-                    <li><a href="{{ asset('#') }}">Klussen in Zwolle</a></li>
-                    <li><a href="{{ asset('#') }}">Diensten</a></li>
+                    <li><a href="{{ asset('/klussen-zwolle') }}">Klussen Zwolle</a></li>
+                    <li><a href="{{ asset('#') }}" class="sub-menu-link" id="diensten-nav-item">Diensten</a></li>
                     <li><a href="{{ asset('#') }}" id="nav-offerte">Offerte Aanvragen</a></li>
                 </ul>
             </nav>
@@ -30,6 +30,25 @@
         </div>
     </div>
     <div id="header-buffer"></div>
+    <div id="dropdown-diensten-item" class="dropdown-menu-item dmi-resp">
+        <div class="close-dd-nav" id="close-dd-nav">&times;</div>
+        <div class="dd-menu-content dd-single">
+            <div class="dd-groep">
+                <h5>Webdesign</h5>
+                <ul>
+                    <li><a href="{{ asset('/webdesign') }}">Webdesign</a></li>
+                    <li><a href="{{ asset('/website-laten-maken') }}">Website laten maken</a></li>
+                </ul>
+            </div>
+            <div class="dd-groep">
+                <h5>Webhosting</h5>
+                <ul>
+                    <li><a href="{{ asset('/webhosting') }}">Webhosting</a></li>
+                    <li><a href="{{ asset('/website-huren') }}">Website huren</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     @yield('content')
     <footer>
         <div class="container">
