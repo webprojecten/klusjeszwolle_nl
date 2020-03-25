@@ -42,7 +42,7 @@
                 color: $primair;
             }
         }
-        margin: 0 20px 0 auto;
+        margin: 0 0 0 auto;
         padding: 0;
         list-style: none;
         display: flex;
@@ -59,6 +59,11 @@
                 }
             }
         }
+    }
+    #nav-offerte {
+        background-color: $contrast;
+        color: white;
+        margin-left: 10px;
     }
 }
 
@@ -193,20 +198,41 @@ h1 {
 }
 .icons {
     background-color: rgba($primair, .1);
-    margin-top: 50px;
+    margin: 50px 0 100px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 50px;
+    button {
+        width: 100%;
+        padding: 20px 0;
+        margin-top: 80px;
+        background-color: $contrast;
+        border: none;
+        color: white;
+        font-size: 1.5em;
+        font-weight: 700;
+        cursor:pointer;
+        &:hover {
+            background-color: lighten($contrast, 3%);
+        }
+    }
+}
+.icon-container-container {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 50px;
 }
 
 .icon-container {
     width: 30%;
     text-align: center;
     color: #666;
-    padding: 0 7%;
-    font-size: 1.3em;
+    padding: 0 4%;
+    font-size: 1.1em;
     img {
         width: 50px;
+        height: 50px;
     }
     h3 {
         margin: 20px 0 10px 0;
@@ -236,6 +262,12 @@ h1 {
         p {
             color: #666;
             margin-bottom: 15px;
+        }
+        .spoed {
+            margin: 50px 0;
+            font-size: 1.4em;
+            color: $contrast;
+            font-weight: 700;
         }
     }
 }
@@ -340,7 +372,7 @@ footer {
             #logo-sidebar {
                 display: block;
                 width: 6em;
-                margin: 0 0 35px 45px;
+                margin: 0 0 35px 25px;
                 font-size: 1.8em;
             }
             padding-top: 100px;
@@ -359,6 +391,11 @@ footer {
                     content: " »"
                 }
             }
+        }
+        #nav-offerte {
+            background-color:transparent;
+            color: white;
+            margin-left: 0;
         }
     }
 
@@ -404,6 +441,7 @@ footer {
         }
         article {
             width: 80%;
+
         }
     }
     

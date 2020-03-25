@@ -1,34 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <title>Document</title>
-</head>
-<body>
-    <div id="header">
-        <div class="container flex-end">
-            <div id="logo" class="primair">
-                Klusjes<span id="logo-zwolle">Zwolle</span>.nl
-            </div>
-            <nav id="nav">
-                <ul id="nav-links">
-                    <div class="sidebar-close" onclick="closeNav()">&times;</div>
-                    <div id="logo-sidebar" class="primair">
-                        Klusjes<span id="logo-zwolle">Zwolle</span>.nl
-                    </div>
-                    <li><a href="{{ asset('#') }}">Home</a></li>
-                    <li><a href="{{ asset('#') }}">Klussen in Zwolle</a></li>
-                    <li><a href="{{ asset('#') }}">Contact</a></li>
-                </ul>
-            </nav>
-            <div id="hamburger-icon">
-                <img src="{{ asset('img/hamburger-icon.svg') }}" alt="">
-            </div>
-        </div>
-    </div>
-    <div id="header-buffer"></div>
+@extends('base')
+
+@section('content')
     <div class="container" id="content-wrapper">
         <div id="call-to-action">
             <div id="cta-voordelen">
@@ -39,7 +11,7 @@
                         <li ><a href="{{ asset('/spoedverbouwing-in-zwolle') }}" class="contrast"><b>Spoed mogelijk!</b></a></li>
                         <li>Goede prijs</li>
                         <li>Alles netjes afgewerkt</li>
-                        <li>Geen gezeik achteraf</li>
+                        <li>Geen gedoe achteraf</li>
                         <li>100% tevreden</li>
                     </ul>
                     <a href=""><button>Offerte aanvragen</button></a>
@@ -54,53 +26,6 @@
             </div>
         </div>
         <h1 class="primair">KlusjesZwolle.nl: wij staan dag en nacht klaar voor al uw klussen in Zwolle</h1>
-        <div class="icons">
-            <div class="icon-container">
-                <img src="{{ asset('/img/welke-klussen.svg') }}" alt="Welke klussen doen wij in Zwolle">
-                <h3>Klussen in Zwolle</h3>
-                <p>
-                    Heeft u een klussenbedrijf nodig in Zwolle? Vraag een offerte aan en er wordt zo spoedig mogelijk contact met u opgenomen. Gratis en vrijblijvend!
-                </p>
-            </div>
-            <div class="icon-container">
-                <img src="{{ asset('/img/in-en-om-het-huis.svg') }}" alt="Klussen in en om het huis">
-                <h3>In en om het huis</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sunt modi officia blanditiis delectus quibusdam, molestias maxime praesentium laborum itaque!
-                </p>
-            </div>
-            <div class="icon-container">
-                <img src="{{ asset('/img/snel.svg') }}" alt="Snelle oplevering">
-                <h3>spoed</h3>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ab laboriosam aliquid! Explicabo, harum. Aperiam quasi natus accusantium!
-            </div>
-        </div>
-        <div class="content">
-            <img src="{{ asset('/img/klusjes-in-zwolle.jpg') }}" alt="Klusjes in Zwolle" title="Klusjes in Zwolle">
-            <article>
-                <h2 class="primair">Klussenbedrijf in Zwolle zoeken?</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos neque voluptatem sequi totam nam laudantium at reprehenderit labore repellat, numquam debitis ipsam necessitatibus repudiandae, voluptas nisi consectetur explicabo corrupti quia facere natus fuga velit omnis odit mollitia. Magnam sunt, eveniet porro aperiam, molestias aliquid cupiditate possimus architecto unde esse corrupti.
-                </p>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos neque voluptatem sequi totam nam laudantium at reprehenderit labore repellat, numquam debitis ipsam necessitatibus repudiandae, voluptas nisi consectetur explicabo corrupti quia facere natus fuga velit omnis odit mollitia. Magnam sunt, eveniet porro aperiam, molestias aliquid cupiditate possimus architecto unde esse corrupti.
-                </p>
-            </article>
-        </div>
-        <div class="content">
-            <article>
-                <h2 class="primair">Klussenbedrijf in Zwolle zoeken?</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos neque voluptatem sequi totam nam laudantium at reprehenderit labore repellat, numquam debitis ipsam necessitatibus repudiandae, voluptas nisi consectetur explicabo corrupti quia facere natus fuga velit omnis odit mollitia. Magnam sunt, eveniet porro aperiam, molestias aliquid cupiditate possimus architecto unde esse corrupti.
-                </p>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos neque voluptatem sequi totam nam laudantium at reprehenderit labore repellat, numquam debitis ipsam necessitatibus repudiandae, voluptas nisi consectetur explicabo corrupti quia facere natus fuga velit omnis odit mollitia. Magnam sunt, eveniet porro aperiam, molestias aliquid cupiditate possimus architecto unde esse corrupti.
-                </p>
-            </article>
-            <img src="{{ asset('/img/schilderen.jpg') }}" alt="Klusjes in Zwolle" title="Klusjes in Zwolle">
-
-        </div>
-        <!-- <h2 class="primair">Voorbeelden klussen in Zwolle</h2> -->
         <div id="mogelijkheden">
             <div class="img-container">
                 <img src="{{ asset('/img/badkamer-verbouwen-zwolle.jpg') }}" alt=" in Zwolle" title=" in Zwolle">
@@ -139,24 +64,93 @@
                 </div>
             </div>
         </div>
-        <div class="content no-border">
-            <img src="{{ asset('/img/gereedschap.jpg') }}" alt="Klusjes in Zwolle" title="Klusjes in Zwolle">
+        
+        <div class="content">
+            <img src="{{ asset('/img/klusjes-in-zwolle.jpg') }}" alt="Klusjes in Zwolle" title="Klusjes in Zwolle">
             <article>
-                <h2 class="primair">Klussenbedrijf in Zwolle zoeken?</h2>
+            <h2 class="primair">Op zoek naar een klussenbedrijf in Zwolle?</h2>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos neque voluptatem sequi totam nam laudantium at reprehenderit labore repellat, numquam debitis ipsam necessitatibus repudiandae, voluptas nisi consectetur explicabo corrupti quia facere natus fuga velit omnis odit mollitia. Magnam sunt, eveniet porro aperiam, molestias aliquid cupiditate possimus architecto unde esse corrupti.
+                    Heeft u een bepaalde klus die gedaan moet worden in en rond het huis? Of misschien moeten er klusjes worden gedaan in uw bedrijfspand? U zoekt een goed klussenbedrijf in Zwolle? Zoek niet verder! KlusjesZwolle.nl kan u helpen.
                 </p>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos neque voluptatem sequi totam nam laudantium at reprehenderit labore repellat, numquam debitis ipsam necessitatibus repudiandae, voluptas nisi consectetur explicabo corrupti quia facere natus fuga velit omnis odit mollitia. Magnam sunt, eveniet porro aperiam, molestias aliquid cupiditate possimus architecto unde esse corrupti.
+                    KlusjesZwolle.nl kan u helpen met allerlei soorten klussen in en om het huis of bedrijfspand. Moet er een vloer gelegd worden? KlsujesZwolle.nl kan ervoor zorgen dat binnen no-time een vloer in uw huiskamer ligt. Maar ook als u uw dakgoten wilt laten onderhouden, een schutting moet worden geplaats of er moet worden behangen kan KlusjesZwolle u helpen.
+                </p>
+                <p>
+                    KlusjesZwolle is uw partner in de meeste klussen die u maar heeft. Tip: weet u niet zeker of KlusjesZwolle.nl uw klus voor u kan doen, vraag dan geheel gratis en vrijblijven een offerte aan. Wij gaan dan kijken of, wanneer en tegen welke prijs wij u klus voor u kunnen doen.
                 </p>
             </article>
         </div>
-    </div>
-    <footer>
-        <div class="container">
-            @ 2020
+        <div class="content no-border">
+            <article>
+                <h2 class="primair">KlsujesZwolle.nl is het klussenbedrijf voor bedrijfspanden</h2>
+                <p>
+                    U heeft een bedrijfspand waar onderhoud nodig is? U bent net in uw bedrijfspand gaan zitten en hebt een nieuwe vloer ndig? Wij kunnen u helpen met zowel advies als uitovering.
+                </p>
+                <p>
+                    Heeft u een nieuwe balie nodig voor uw klatencontact? Wij kunnen deze klus snel en netjes uitvoeren, zodat u er geen omkijken naar heeft. Uw bestaande klanten zullen zich afvragen of ze in een nieuw kantoor zijn gelopen.
+                </p>
+                <p>
+                    Maar misschien heeft u wel een andere klus. Wilt u een airco aanleggen? KlusjesZwolle.nl kan het voor u regelen. Een vergaderruimte inrichten compleet met beamer en projectiescherm? Voor KlusjesZwolle.nl is het allemaal geen probleem. Als u gratis en vrijblijvend een offerte aanvraagt, zullen wij zo snel mogelijk contact met u opnemen om de mogelijkheden en de kosten met u te bespreken. 
+                </p>
+            </article>
+            <img src="{{ asset('/img/vergaderruimte-in-zwolle-laten-bouwen.jpg') }}" alt="Klusjes in Zwolle" title="Klusjes in Zwolle">
+
         </div>
-    </footer>
-    <script src="{{ asset('js/js_events.js') }}"></script>
-</body>
-</html>
+        <!-- <h2 class="primair">Voorbeelden klussen in Zwolle</h2> -->
+        <div class="icons">
+            <div class="icon-container-container">
+                <div class="icon-container">
+                    <img src="{{ asset('/img/welke-klussen.svg') }}" alt="Welke klussen doen wij in Zwolle">
+                    <h3>Klussen in Zwolle</h3>
+                    <p>
+                        Heeft u een klussenbedrijf nodig in Zwolle? Vraag een offerte aan en er wordt zo spoedig mogelijk contact met u opgenomen.
+                </div>
+                <div class="icon-container">
+                    <img src="{{ asset('/img/in-en-om-het-huis.svg') }}" alt="Klussen in en om het huis">
+                    <h3>In en om het huis</h3>
+                    <p>
+                        Wij kunnen al uw klussen doen in en om het huis. Vraag gratis en vrijblijvend een offerte aan en wij kunnen gaan kijken naar de mogelijkheden.
+                    </p>
+                </div>
+                <div class="icon-container">
+                    <img src="{{ asset('/img/snel.svg') }}" alt="Snelle oplevering">
+                    <h3>Spoed voor uw klus</h3>
+                    <p>
+                        Heeft u haast? Klusjeszwolle.nl staat dag en nacht voor u klaar. U kunt ons vi ons spoednummer bereiken op 0612345678.
+                    </p>
+                </div>
+            </div>
+            <button>Offerte Aanvragen</button>
+        </div>
+        <div class="content">
+            <img src="{{ asset('/img/gereedschap.jpg') }}" alt="Klusjes in Zwolle" title="Klusjes in Zwolle">
+            <article>
+                <h2 class="primair">KlusjesZwolle.nl laat geen rotzooi achter na uw klus in Zwolle</h2>
+                <p>
+                    Bij KlusjesZwolle.nl vinden wij dat nadat uw klus is gedaan u niet opgezadeld moet worden met nog een klus: opruimen. Wij zorgen ervoor dat alles netjes achter wordt gelaten. Zo heeft u ook na het verhelpen van de klus geen gedoe achteraf.
+                </p>
+                <p>
+                    Sommige klussen maken meer rotzooi dan anderen. Maar bij KlusjesZwolle.nl vinden wij dat u hier op geen enkele manier last van moet hebben. Daarom zeggen wij bij KlsujesZwolle.nl altijd: klus gedaan en alles netjes. Zo hoeft u niet alsnog zelf alles op te ruimen.
+                </p>
+            </article>
+        </div>
+        <div class="content no-border">
+            <article>
+                <h2 class="primair">Haast met uw klus in Zwolle? Wij leveren spoed!</h2>
+                <p>
+                    Heeft u een gesproigen leiding en kunt u niet wachten? KlusjesZwolle.nl kan u met spoed helpen. 
+                </p>
+                <p class="spoed">
+                    Spoednummer: 0000000000
+                </p>
+                <p>
+                    Wij proberen zo snel mogelijk bij u aanwezig te zijn om uw probleem direct aan te pakken. Wacht niet langeer en bel het spoednummer, zodat wij meteen uw spoedklus in Zwolle kunnen oplossen.
+                </p>
+                <p>
+                    Mogelijkheden en tarieven zullen over de telefoon zo snel mogelijk met u worden besproken. 
+                </p>
+            </article>
+            <img src="{{ asset('/img/spoed-voor-uw-klus-in-zwolle.jpg') }}" alt="Klusjes in Zwolle" title="Klusjes in Zwolle">
+        </div>
+    </div>
+@endsection
