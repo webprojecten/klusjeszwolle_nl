@@ -114,6 +114,10 @@ nav a:hover {
   padding: 10px 10px;
 }
 
+#nav #nav-offerte:hover {
+  background-color: #912602;
+}
+
 #dropdown-diensten-item {
   border-top-style: none;
 }

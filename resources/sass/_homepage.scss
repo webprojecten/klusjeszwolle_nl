@@ -64,6 +64,9 @@
         color: white;
         margin: 5px 0 0 10px;
         padding: 10px 10px;
+        &:hover {
+            background-color: lighten($contrast, 3%);
+        }
     }
 }
 
