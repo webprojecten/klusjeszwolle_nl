@@ -34,17 +34,13 @@
         <div class="close-dd-nav" id="close-dd-nav">&times;</div>
         <div class="dd-menu-content dd-single">
             <div class="dd-groep">
-                <h5>Webdesign</h5>
                 <ul>
-                    <li><a href="{{ asset('/webdesign') }}">Webdesign</a></li>
-                    <li><a href="{{ asset('/website-laten-maken') }}">Website laten maken</a></li>
-                </ul>
-            </div>
-            <div class="dd-groep">
-                <h5>Webhosting</h5>
-                <ul>
-                    <li><a href="{{ asset('/webhosting') }}">Webhosting</a></li>
-                    <li><a href="{{ asset('/website-huren') }}">Website huren</a></li>
+                    <li><a href="{{ asset('/badkamer-verbouwen') }}">BADKAMER VERBOUWEN</a></li>
+                    <li><a href="{{ asset('/keuken-verbouwen') }}">KEUKEN VERBOUWEN</a></li>
+                    <li><a href="{{ asset('/dak-onderhouden') }}">DAK ONDERHOUDEN</a></li>
+                    <li><a href="{{ asset('/electronica-onderhouden') }}">ELECTRONICA ONDERHOUDEN</a></li>
+                    <li><a href="{{ asset('/vloer-leggen') }}">VLOER LEGGEN</a></li>
+                    <li><a href="{{ asset('/woonkamer-verbouwen') }}">WOONKAMER VERBOUWEN</a></li>
                 </ul>
             </div>
         </div>

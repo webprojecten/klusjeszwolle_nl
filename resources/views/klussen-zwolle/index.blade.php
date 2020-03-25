@@ -29,39 +29,51 @@
         <div id="mogelijkheden">
             <div class="img-container">
                 <img src="{{ asset('/img/badkamer-verbouwen-zwolle.jpg') }}" alt=" in Zwolle" title=" in Zwolle">
-                <div class="overlay">
+                <a href="{{ asset('/badkamer-verbouwen') }}">
+                    <div class="overlay">
                     <div class="text">Badkamer verbouwen?</div>
-                </div>
+                    </div>
+                </a>
             </div>
             <div class="img-container">
                 <img src="{{ asset('/img/keuken-verbouwen-zwolle.jpg') }}" alt=" in Zwolle" title=" in Zwolle">
-                <div class="overlay">
+                <a href="{{ asset('/keuken-verbouwen') }}">
+                    <div class="overlay">
                     <div class="text">Keuken Verbouwen?</div>
-                </div>
+                    </div>
+                </a>
             </div>
             <div class="img-container">
                 <img src="{{ asset('/img/onderhoud-dak-zwolle.jpg') }}" alt=" in Zwolle" title=" in Zwolle">
-                <div class="overlay">
+                <a href="{{ asset('/dak-onderhouden') }}">
+                    <div class="overlay">
                     <div class="text">Dak onderhouden?</div>
-                </div>
+                    </div>
+                </a>
             </div>
             <div class="img-container">
                 <img src="{{ asset('/img/onderhoud-electronica-zwolle.jpg') }}" alt=" in Zwolle" title=" in Zwolle">
-                <div class="overlay">
+                <a href="{{ asset('/electronica-onderhouden') }}">
+                    <div class="overlay">
                     <div class="text">Electronica onderhouden?</div>
-                </div>
+                    </div>
+                </a>
             </div>
             <div class="img-container">
                 <img src="{{ asset('/img/vloer-leggen-zwolle.jpg') }}" alt=" in Zwolle" title=" in Zwolle">
-                <div class="overlay">
+                <a href="{{ asset('/vloer-leggen') }}">
+                    <div class="overlay">
                     <div class="text">Vloer leggen?</div>
-                </div>
+                    </div>
+                </a>
             </div>
             <div class="img-container">
                 <img src="{{ asset('/img/woonkamer-verbouwen-zwolle.jpg') }}" alt=" in Zwolle" title=" in Zwolle">
-                <div class="overlay">
+                <a href="{{ asset('/woonkamer-verbouwen') }}">
+                    <div class="overlay">
                     <div class="text">Woonkamer verbouwen?</div>
-                </div>
+                    </div>
+                </a>
             </div>
         </div>
         
