@@ -218,11 +218,12 @@ nav a:hover {
 #cta-voordelen #voordelen-lijst ul {
   position: absolute;
   top: 130px;
+  width: 100%;
 }
 
 #cta-voordelen #voordelen-lijst ul li {
   color: #666;
-  margin-left: 70px;
+  margin-left: 20%;
   font-size: 1.2em;
   margin-bottom: 15px;
   font-style: italic;
